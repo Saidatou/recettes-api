@@ -1,0 +1,11 @@
+
+git add .
+git status
+git commit -m "mise en place de librairies nécessaires (init)"
+git push -u origin features/41-mise-en-place-du-projet-symfony (faire git push ensuite pour les autres push)
+git reset --hard(annuler les modifications fait après le dernier commit)
+composer require friendsofphp/php-cs-fixer --dev
+composer require --dev phpstan/phpstan phpstan/extension-installer phpstan/phpstan-doctrine phpstan/phpstan-phpunit phpstan/phpstan-symfony
+------------------------------add----------------------------------------
+erreur warning: in the working copy of '.env', LF will be replaced by CRLF the next time Git touches it
+git config --global core.autocrlf false
